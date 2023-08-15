@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#ffffff; /* gray background color */
+    cursor: pointer;
+    
+    
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Space between each item */
+    padding: 30px; /* Padding for the container */
+    
+    
+}
+
+.item {
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 9px;
+    position: relative;
+    width: calc(33.33% - 20px); /* Equal spacing for each section */
+    background-color:gray;
+    
+    
+
+
+}
+
+h1 {
+    text-align: center;
+}
+
+
+h2 {
+    font-size: 110%;
+    margin-top: 0; /* Remove default margin for h2 */
+}
+
+h3 {
+    font-size: 85%;
+    margin-top: 0; /* Remove defult margin for h4 */
+}
+
+p {
+    font-size:100%;
+    margin-bottom: 0; /* Remove default margin for p */
+}
+
+/* Section Title Boxes */
+.section-title {
+    position:absolute;
+    top: 0px;
+    left:0px;
+    padding:3px 30px;
+    color:black; /* Text color for the section title box */
+    background-color: #c14543;
+    border: 1.5px solid black;
+
+}
+
+/* Different colors for each section title */
+.lunch.section-title {
+    background-color: aquamarine; /* Color for the lunch section title box */
+}
+
+.Dinner.section-title {
+    background-color: #c14543; /* Color for the section section title box */
+}
+
+.Sandwiches.section-title {
+    background-color:yellow ; /* Color for the sandwiches section title box */
+}
+
+@media screen and (max-width: 991px) {
+    .item {
+        width: calc(50% - 20px); /* Equal spacing for tablet view */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .item {
+        width: 100%; /* Full width for mobile view */
+    }
+}
